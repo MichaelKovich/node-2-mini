@@ -3,7 +3,7 @@ module.exports = {
     const dbInstance = req.app.get('db');
 
     dbInstance
-      .getPlanes([25])
+      .get_planes([25])
       .then((planes) => {
         res.status(200).send(planes);
       })
